@@ -1,0 +1,12 @@
+:root {
+  --main-color: #873134;
+  --main-color-opacity: #873134aa;
+  --main-color-gradient: linear-gradient(135deg, #ffada8 25%, #a54f53 75%);
+  --main-color-black: #363636;
+  --main-color-black-opacity: #363636aa;
+  --main-color-white: #ffeed4;
+  --main-color-gray: #757575;
+  --main-color-light-2: #ffa85d;
+  --main-color-light: #fed3a9;
+  --scale-icon: 1;
+}

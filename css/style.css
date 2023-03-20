@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+
+
+/* Geral */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+    
+}
+a{text-decoration: none;}
+ul{
+    list-style-type: none;
+}
+.animacao:hover{
+    animation: shake_box 0.5s linear;
+}
+/*----------------------------------------*/
+.cabecalho-menu-item:hover{
+    color: var(--main-color-white)!important;
+    opacity: 1!important;
+    transition: 1s ease-out;
+    transform: scale(1.1);
+    animation: shake_box 0.5s linear;
+}
+/*----------------------------------------*/
+#home, #gameModes, #gamePlay, #caracters{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* Background */
+.bg_fixed{
+    background-attachment: fixed!important;
+}
+.bg_1{
+ 	background: url('../img/bg/bg_1.jpg') no-repeat center center;
+ 	color: var(--main-color-white);
+    background-size: cover;
+}.bg_2{
+ 	background: url('../img/bg/bg_2.jpg') no-repeat center center;
+ 	color: var(--main-color-white);
+    background-size: cover;
+}.bg_3{
+    background: url('../img/bg/bg_4.jpg') no-repeat top center;
+    color: var(--main-color-black);
+    background-size: cover;
+}.bg_4{
+    background: url('../img/bg/bg_4.png') no-repeat top center;
+    color: var(--main-color-black);
+    background-repeat: repeat;
+    background-size: 100% auto;
+}.bg_5{
+    background: url('../img/bg/bg_5.jpg') no-repeat top center;
+    color: var(--main-color-white);
+    background-size: cover;
+}.bg_mainColor{
+    background-color:var(--main-color);
+    color: var(--main-color-white);
+}.bg_black{
+    background-color:var(--main-color-black);
+    color: var(--main-color-white);
+}.bg_white{
+    background-color:var(--main-color-white);
+    color: var(--main-color-black);
+}.bg_light{
+    background-color:var(--main-color-light);
+    color: var(--main-color-gray);
+}
+/* Title */
+.small-title{
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing:1px;
+    color: var(--main-color);
+    align-self: flex-center;
+}
+.sobre-title{
+    font-size: 2.5em;
+    font-weight: 600;
+    align-self: center;
+    color: var(--main-color-white);
+}.sobre-title-black{
+    font-size: 2.5em;
+    font-weight: 600;
+    align-self: center;
+    color: var(--main-color-black);
+}
+.free-to-play_title{
+    font-family: "VT323";
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 50px;
+    background-image: url('../img/pergaminho.png');
+    background-size: 100% 100%;    
+    width: 100%;
+    z-index: 0;
+}
+#team{
+    padding-up: 10vh;
+    padding-bottom: 10vh;
+}
+.teamperson{
+    margin-top: 30px;
+}.teamperson:hover{
+    animation: shake_box 0.5s linear;    
+}
+.teamperson a{
+    color: var(--main-color-white)!important;
+}
+/* Home */
+#home{
+    min-height: 100vh;
+}
+.home-buttons button{
+    font-size: 1.25em;
+    padding: 30px 25px;
+    /* border-radius: 100px; */
+    font-weight: bold;
+    border:none;
+    background: none;
+    background-image: url('../img/botao1.png');
+    background-size: 100% 100%;
+    color: var(--main-color-black);
+    width: 100%;
+    margin: 15px 0;
+    font-family: "VT323";
+    letter-spacing: 2px;
+}.home-buttons button:hover{
+    color: var(--main-color);
+    animation: shake_box 0.5s linear;
+}
+.bg_team{
+    background-image: url(../img/equipe/0.png);
+    background-size: 100% 100%;
+    padding: 25px 0;
+    margin-left: .25%;
+    width: 99%;
+
+}
+.bg_video_container{
+    position: relative;
+    overflow: hidden;
+}
+.bg_video{
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;left: 0;
+    position: absolute;
+    z-index: -1;
+}
+#playnow{
+    background-image: url('../img/botao.png')!important;
+    font-size: 2em;
+}
+/* Sobre */
+#sobre{
+    min-height: 50vh;
+    padding: 10px;
+}
+.sobre-content p{
+    color: var(--main-color);
+    font-size: 1.1em;
+    font-weight: 200;
+}.sobre-content p b{
+    font-weight: 500;
+}
+/* Conteudo */
+.video{
+    position: relative;
+    width: 100%;
+    padding-bottom:56.25%;
+    height: 0;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* GamePlay*/
+#gameModes{
+    position: relative;
+}
+#gameModes .containerBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: -0px;
+    opacity: .5;
+}
+.gameplay-conteudo{
+    z-index: 1;
+    position: relative;
+}
+#gameModes .col-lg-4{
+    padding: 25px
+}
+.card-gameplay{
+    width: 100%;
+    border: 1px var(--main-color-light) solid;
+    padding: 50px;
+    background-color: var(--main-color-white);
+    color:var(--main-color-gray);
+    border-radius: 10px;
+    transition: 1s ease-out;
+}.card-gameplay:hover{
+    box-shadow: 0px 7.5px 10px var(--main-color-black);
+    animation: shake_box 0.5s linear;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    letter-spacing:1px;
+    color:var(--main-color-black);
+}.card-img{
+    justify-content: center;
+    max-height: 350px;
+    max-width: 350px;
+}.card-img img{
+    width: 100%;
+    height: 100%;
+}
+.card-content{
+}
+/* Characters */
+#caracters .col-lg-4{
+    padding: 15px
+}
+
+.card-caracters{
+    width: 100%;
+    padding: 25px 10px;
+    background-color: var(--main-color-opacity);
+    background-size: cover;
+    color:var(--main-color-white);
+    border:1px solid var(--main-color-black);
+    border-radius: 10px;
+    transition: 1s ease-out;
+}.card-caracters:hover{
+    box-shadow: 0px 7.5px 10px var(--main-color-black);
+    background-color:var(--main-color-black-opacity);
+}
+
+.moeda{
+    background-image: url(../img/fundo_moeda.png);
+    background-size: 100% 100%;
+    padding: 30px 50px
+}.moeda span{
+    color:var(--main-color-white);
+    font-size: 18px;
+    padding: 0 25px;
+    word-wrap: break-word;
+}.moeda p{
+    color:var(--main-color-white);
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Contato */
+#contato{
+    padding: 50px 0;
+    color: var(--main-color-black);
+}
+#gamePlay .white-container{
+    padding: 10px;
+    color: var(--main-color-black);
+    background-color: #fffa;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}.white-container ul{
+    list-style:disc!important;
+}.white-container ul b{
+    color:var(--main-color);
+    font-size: 18px;
+}
+#contato .white-container {
+    padding: 50px 0;
+    background-color: #fffa;
+}
+#contato a{
+    color: var(--main-color);
+}
+#contato a:hover{
+    color: var(--main-color-gray);
+}
+/* Contato Lateral*/
+.contato-lateral{
+    position: fixed;
+    left: 30px;
+    bottom: 55px;
+    /*background-color: var(--main-color);*/
+    background-image: url('../img/fundo_social.png');
+    background-size: 100% 100%;
+    /*border: 1px solid var(--main-color-light);*/
+    width: 60px;
+    padding: 10px;
+    z-index: 999;
+}
+.contato-lateral a img{
+    margin:5px 0; 
+}
+/* copyright*/
+.rodape{
+    width: 100%;
+    padding-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--main-color-light);
+}
+/* Media Size*/
+@media (max-width: 999px){
+    .sobre-img-side{
+        display: none;
+    }.card-2{
+        width: 350px;
+    }.home-title{
+        font-size: 1.5em;
+    }.sobre-title{
+        font-size: 1.5em;
+    }.sobre-infos{
+        padding: 15vh 0;
+    }
+}
+/* Animation*/
+@keyframes shake_box{
+    20%{
+        transform: rotate(1deg);
+    }
+    60%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes shake_scale_box{
+    0%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: rotate(5deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0);
+        transform: scale(1);
+    }
+}
